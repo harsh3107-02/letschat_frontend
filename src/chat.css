@@ -1,0 +1,99 @@
+.header {
+    display: grid;
+    grid-template-areas: 'header' 'main' 'footer';
+    grid-template-rows: 80px 520px 60px;
+    flex: 0.85;
+}
+
+.icon {
+    grid-area: header;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+    /* width: 35vw; */
+    height: 39px;
+}
+
+.icon_info {
+    flex: 1;
+    padding-left: 15px;
+}
+
+.icon_header {
+    align-items: center;
+}
+
+.chats {
+    grid-area: main;
+    background: url("https://wallpaperaccess.com/full/2224368.png") repeat center fixed;
+    background-position: 0px 85px;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+}
+
+
+/* webkit-scrollbar {
+    display: none;
+} */
+
+.chat_message {
+    position: relative;
+    font-size: 16px;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    background-color: #202C33;
+    margin-bottom: 30px;
+    color: white;
+    margin-left: 50px;
+}
+
+.chat_reciever {
+    margin-left: auto;
+    background-color: #128C7E;
+    margin-right: 50px;
+}
+
+.time {
+    position: relative;
+    bottom: -2px;
+    margin-left: 10px;
+    font-size: xx-small;
+    color: WHITE;
+}
+
+.chat_name {
+    color: greenyellow;
+    position: absolute;
+    top: -1px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 12.8px;
+}
+
+.chat_footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    border-top: 1px solid white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.chat_footer>form>input {
+    border: none;
+    background-color: #2A3942;
+    /* padding-left: 5px; */
+    width: 920px;
+    height: 40px;
+    outline-width: 0;
+    border-radius: 10px;
+}
