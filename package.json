@@ -1,5 +1,6 @@
 {
     "name": "letschat",
+    "homepage": "https://harsh3107-02.github.io/letschat_frontend",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
